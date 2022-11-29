@@ -14,10 +14,10 @@ addEventListener('keydown', (event) => {
         modal.classList.remove(visibleClassName);
     }
 });
-// const outer = document.querySelector('.outer');
-// const inner = document.querySelector('.inner');
-// outer.addEventListener('mousemove', (event) => {
-//     const { x, y } = event;
-//     inner.style.translate = `${x - 10}px ${y - 10}px`;
-// });
+const outer = document.querySelector('.outer');
+const inner = document.querySelector('.inner');
+outer.addEventListener('mousemove', (event) => {
+    const { x, y } = event;
+    inner.style.translate = `${x - 10}px ${y - 10}px`;
+});
 openModal();

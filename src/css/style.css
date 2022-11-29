@@ -1,81 +1,47 @@
-body{
-    height: 100vh;
+html,
+body {
     margin: 0;
-    background-color: lightblue;
+    padding: 0;
 }
-.time{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 300px;
-    font-family: fantasy;
-    padding-top: 150px;
 
-}
-.hours{
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    background-color: #000000B8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.modal--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__content {
+    background-color: white;
     border-radius: 8px;
+    padding: 10px;
     width: 500px;
-    height: 500px;
-    background-color: cadetblue;
-    /*animation: flipInX;*/
-    /*animation-delay:3599s;*/
-    /*animation-duration: 1s;*/
-    /*animation-direction:3600s;*/
 }
-.minutes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    width: 500px;
-    height: 500px;
-    background-color: darkslategray;
-    animation: flipInX;
-    animation-delay:59s;
-    animation-duration: 1s;
-    /*animation-direction:58s;*/
-    /*animation-iteration-count:infinite;*/
-}
-.seconds{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    width: 500px;
-    height: 500px;
-    background-color: cornflowerblue;
-    /*animation: flipInX;*/
-    animation: flipOutY;
-    /*animation: slideInDown;*/
-    opacity: 0.3;
-    animation-duration: 1s;
-    animation-iteration-count:infinite;
-}
-.settings{
-    display: flex;
-    justify-content: center;
-}
-.setTime{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial;
-    color: cadetblue;
-    min-width: 150px;
-    min-height: 50px;
-    background-color: darkslategray;
-    border-radius: 8px;
-}
-.buttonCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightblue;
-    border-radius: 6px;
-    min-width: 100px ;
-    min-height: 25px;
-}
+
+/*.outer {*/
+/*    border: 3px solid;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    position: relative;*/
+/*}*/
+
+/*.inner {*/
+/*    position: absolute;*/
+/*    background-color: red;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
